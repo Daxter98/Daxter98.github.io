@@ -1,0 +1,49 @@
+
+/*Efecto de maquina de escritura*/
+
+.txtcontainer {
+	margin: auto;
+	display: table;
+}
+
+h1 { 
+	position: relative; 
+	float: left;
+    background: #191919;
+	color: #fff;
+	font-size: 2.5em;
+}
+
+h1 span {
+    position:absolute;
+    right:0;
+    width:0;
+    background: #191919;
+    border-left: 1px solid #000;
+    animation: escribir 3s steps(30) infinite alternate;
+}
+
+@keyframes escribir {
+    from { width: 100% }
+    to { width:0 }
+}
+
+/*Other styles*/
+.bg-alter{
+    background-color: #191919;
+}
+
+/* Estilos para redondear el borde de la imagen */
+.masthead-avatar {
+    border-radius: 50%; /* Redondea los bordes al 50% para hacer un círculo */
+    width: 550px; /* Ajusta el tamaño de la imagen según sea necesario */
+    height: 250px; /* Ajusta el tamaño de la imagen según sea necesario */
+    object-fit: cover; /* Para asegurarse de que la imagen se ajuste dentro del círculo */
+    border: 2px solid #fff; /* Borde blanco de 2px alrededor de la imagen */
+}
+
+.centrado{
+    margin: 0px auto;
+    display: flex;
+    justify-content: center;
+}
